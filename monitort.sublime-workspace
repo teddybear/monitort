@@ -1,0 +1,1530 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"request\t(param)"
+			],
+			[
+				"ma",
+				"match_info"
+			],
+			[
+				"a",
+				"attrib"
+			],
+			[
+				"el",
+				"else\t(keyword)"
+			],
+			[
+				"ret",
+				"retwards"
+			],
+			[
+				"Flg",
+				"Flight"
+			],
+			[
+				"Fli",
+				"Flight"
+			],
+			[
+				"FLi",
+				"Flight"
+			],
+			[
+				"fli",
+				"flights1\t(statement)"
+			],
+			[
+				"s",
+				"src"
+			],
+			[
+				"fl",
+				"flightnum"
+			],
+			[
+				"read",
+				"readlines\t(function)"
+			],
+			[
+				"log",
+				"logging\t(module)"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"form",
+				"form__input"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"p",
+				"placeholder\tAttr"
+			],
+			[
+				"P",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"las",
+				"last_journal"
+			],
+			[
+				"ga",
+				"gazp_rest\t(module)"
+			],
+			[
+				"d",
+				"db_record_prepare\t(function)"
+			],
+			[
+				"is",
+				"isinstance\t(function)"
+			],
+			[
+				"ex",
+				"exception"
+			],
+			[
+				"me",
+				"message"
+			],
+			[
+				"ch",
+				"check_sber_upl\t(function)"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"lo",
+				"login\t(function)"
+			],
+			[
+				"khm",
+				"khmb_payment\t(statement)"
+			],
+			[
+				"payme",
+				"payment_status"
+			],
+			[
+				"kh",
+				"khmb_payment\t(statement)"
+			],
+			[
+				"L",
+				"LB_INVOICE_DUPLICATE\t(statement)"
+			],
+			[
+				"str",
+				"strptime"
+			],
+			[
+				"k",
+				"khmb_error_response\t(function)"
+			],
+			[
+				"er",
+				"err_msg\t(param)"
+			],
+			[
+				"da",
+				"datetime\t(class)"
+			],
+			[
+				"for",
+				"format\t(function)"
+			],
+			[
+				"order",
+				"order_by"
+			],
+			[
+				"en",
+				"endswith"
+			],
+			[
+				"hel",
+				"HelpDesk"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"fu",
+				"full"
+			],
+			[
+				"reg",
+				"reg_name"
+			],
+			[
+				"in",
+				"invoice"
+			],
+			[
+				"pay",
+				"pay_chk\tfunction"
+			],
+			[
+				"pa",
+				"pay_chk\tfunction"
+			],
+			[
+				"LB",
+				"LBWrap\tfunction"
+			],
+			[
+				"requ",
+				"requires_basic_auth\tfunction"
+			],
+			[
+				"entra",
+				"entrance"
+			],
+			[
+				"st",
+				"street"
+			],
+			[
+				"co",
+				"country"
+			],
+			[
+				"cre",
+				"create_date"
+			],
+			[
+				"pass",
+				"passissuedep"
+			],
+			[
+				"pass_n",
+				"pass_num"
+			],
+			[
+				"pass_se",
+				"pass_ser"
+			],
+			[
+				"cr",
+				"create_date"
+			],
+			[
+				"passi",
+				"passissuedep"
+			],
+			[
+				"ab",
+				"abonentpatronymic"
+			],
+			[
+				"v",
+				"vgroup"
+			],
+			[
+				"acc",
+				"accid"
+			],
+			[
+				"agr",
+				"agrmid"
+			],
+			[
+				"Log",
+				"Logout"
+			],
+			[
+				"LB_",
+				"LB_AGENT\tstatement"
+			],
+			[
+				"date",
+				"datetime\tclass"
+			],
+			[
+				"dateti",
+				"datetime\tmodule"
+			],
+			[
+				"add",
+				"addr\t(local, instance)"
+			],
+			[
+				"ad",
+				"address\t(local, instance)"
+			],
+			[
+				"arm",
+				"agrmid\tstatement"
+			],
+			[
+				"build",
+				"buildq\t(global, instance)"
+			],
+			[
+				"ent",
+				"entr"
+			],
+			[
+				"name",
+				"namedtuple\tfunction"
+			],
+			[
+				"flr",
+				"flr_id\t(local, instance)"
+			],
+			[
+				"get",
+				"getOrCreateFloor(a, st_id, blid, entid)\t(global, function)"
+			],
+			[
+				"soap",
+				"soapAddressFloor"
+			],
+			[
+				"except",
+				"except\t(keyword, instance)"
+			],
+			[
+				"soapA",
+				"soapAddressFloor"
+			],
+			[
+				"exce",
+				"Exception"
+			],
+			[
+				"insu",
+				"insupdAddressBuilding"
+			],
+			[
+				"le",
+				"len"
+			],
+			[
+				"get_",
+				"get_db_streets\t(global, function)"
+			],
+			[
+				"entr",
+				"entrance"
+			],
+			[
+				"bl",
+				"bl_id"
+			],
+			[
+				"bl_",
+				"bl_blk"
+			],
+			[
+				"exec",
+				"execute"
+			],
+			[
+				"nb",
+				"nblid\t(local, instance)"
+			],
+			[
+				"nam",
+				"namedtuple"
+			],
+			[
+				"utm",
+				"utm_o\tstatement"
+			],
+			[
+				"stree",
+				"streets\tstatement"
+			],
+			[
+				"nfl",
+				"nflid\t(local, instance)"
+			],
+			[
+				"stre",
+				"streets\tstatement"
+			],
+			[
+				"soapAd",
+				"soapAddressFilter"
+			],
+			[
+				"bui",
+				"buildings\tstatement"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"buil",
+				"building\tstatement"
+			],
+			[
+				"fla",
+				"flats\tstatement"
+			],
+			[
+				"agre",
+				"agreements"
+			],
+			[
+				"nbl",
+				"nblid\t(global, instance)"
+			],
+			[
+				"c",
+				"create"
+			],
+			[
+				"recor",
+				"record_id"
+			],
+			[
+				"se",
+				"settl\tstatement"
+			],
+			[
+				"cit",
+				"city"
+			],
+			[
+				"reco",
+				"record_id"
+			],
+			[
+				"selec",
+				"select2"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"sele",
+				"select2"
+			],
+			[
+				"he",
+				"helper"
+			],
+			[
+				"repo",
+				"reports"
+			],
+			[
+				"b",
+				"buildings\tparam"
+			],
+			[
+				"su",
+				"suggestion"
+			],
+			[
+				"abo",
+				"abo_report4"
+			],
+			[
+				"jso",
+				"jsonify\tfunction"
+			],
+			[
+				"cla",
+				"classmethod\tclass"
+			],
+			[
+				"login",
+				"login_required"
+			],
+			[
+				"lb",
+				"lb_session_factory\tstatement"
+			],
+			[
+				"sess",
+				"sessionmaker"
+			],
+			[
+				"or",
+				"orm\timport"
+			],
+			[
+				"or_re",
+				"or_report2"
+			],
+			[
+				"ite",
+				"items\tfunction"
+			],
+			[
+				"mer",
+				"merge_range\tfunction"
+			],
+			[
+				"li",
+				"list\tclass"
+			],
+			[
+				"o",
+				"OrderedDict\tclass"
+			],
+			[
+				"set",
+				"set_bold\tfunction"
+			],
+			[
+				"fo",
+				"format\tfunction"
+			],
+			[
+				"bu",
+				"buh_report"
+			],
+			[
+				"sub",
+				"submit"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"vi",
+				"visible"
+			],
+			[
+				"l",
+				"log\tstatement"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "monitort-checker.py",
+			"settings":
+			{
+				"buffer_size": 1034,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "monitort-rest.py",
+			"settings":
+			{
+				"buffer_size": 5772,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "up",
+		"selected_items":
+		[
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pu",
+				"Git: Push Current Branch"
+			],
+			[
+				"q",
+				"Git: Quick Commit"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"pus",
+				"Git: Push Current Branch"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git ad",
+				"Git: Add All"
+			],
+			[
+				"qui",
+				"Git: Quick Commit"
+			],
+			[
+				"comm",
+				"Git: Quick Commit"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"push ",
+				"Git: Push Current Branch"
+			],
+			[
+				"git commi",
+				"Git: Quick Commit"
+			],
+			[
+				"git p",
+				"Git: Push"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git a",
+				"Git: Add All"
+			],
+			[
+				"git",
+				"Git: Add All"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"c",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"in",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colo",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"pep",
+				"Python: Disable Pep8 Linting On View"
+			],
+			[
+				"pep8",
+				"Python: Disable Pep8 Linting On View"
+			],
+			[
+				"",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"co",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"git diff",
+				"Git: Diff Current File"
+			],
+			[
+				"git di",
+				"Git: Diff Current File"
+			],
+			[
+				"git d",
+				"Git: Diff Current File"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"reid",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ref",
+				"Rope Refactoring: Rename"
+			],
+			[
+				"id",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ide",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"iden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"xml",
+				"Indent XML"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"pe",
+				"User: Python PEP8 Autoformat"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"p",
+				"PEP8: Format Code"
+			],
+			[
+				"js",
+				"Indent JSON"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"git push",
+				"Git: Push Current Branch"
+			],
+			[
+				"git add",
+				"Git: Quick Add"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"pac",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"packe",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pa in",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: XML Processing Instruction"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"nex",
+				"ColorSchemeSelector: Next Color Scheme"
+			],
+			[
+				"sch",
+				"ColorSchemeSelector: Next Color Scheme"
+			],
+			[
+				"them",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"gits",
+				"Git: Status"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"pa e",
+				"Package Control: Enable Package"
+			],
+			[
+				"sche",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"tidy",
+				"Tidy HTML"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"html",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"oack",
+				"Package Control: Remove Package"
+			],
+			[
+				"mote",
+				"Mote"
+			],
+			[
+				"mo",
+				"Mote"
+			],
+			[
+				"Mote",
+				"Mote"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			],
+			[
+				"git pus",
+				"Git: Push Current Branch"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git add ",
+				"Git: Add..."
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"deke",
+				"Package Control: Disable Package"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 515.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/F/MEGA/monitort"
+	],
+	"file_history":
+	[
+		"/F/MEGA/monitort/.gitignore",
+		"/E/MEGA/acro-monitoring/acro-monitoring-checker.py",
+		"/E/MEGA/acro-monitoring/acro-monitoring-rest.py",
+		"/C/Users/teddy/Documents/aaa3.csv",
+		"/C/Users/teddy/AppData/Local/Temp/scp23365/srv/0mq_sender/rate_limit.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp25845/srv/0mq_sender/qsize_check.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp23455/srv/0mq_sender/redmine_send.py",
+		"/F/MEGA/avsales/dw.py",
+		"/F/MEGA/avsales/aio.test.py",
+		"/F/MEGA/avsales/flights.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp26358/srv/0mq_sender/0mq_sender.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp25797/srv/0mq_sender/tg.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp26878/srv/0mq_sender/tg_u.py",
+		"/C/Users/teddy/Desktop/curl_prod_lb.txt",
+		"/E/MEGA/avsales/flights.py",
+		"/F/Downloads/RS_Via-3.xml",
+		"/F/Downloads/pay@telematika.tv_860304250732_34151.csv",
+		"/C/Program Files (x86)/JetBrains/DataGrip 2016.3.4/bin/datagrip.bat",
+		"/C/Program Files (x86)/JetBrains/DataGrip 2016.3.4/bin/datagrip64.exe.vmoptions",
+		"/C/Program Files (x86)/JetBrains/DataGrip 2016.1/bin/datagrip.exe.vmoptions",
+		"/C/Program Files (x86)/JetBrains/DataGrip 2016.3.4/bin/datagrip.exe.vmoptions",
+		"/C/Program Files (x86)/JetBrains/DataGrip 2016.1/bin/datagrip64.exe.vmoptions",
+		"/C/Users/teddy/Dropbox/stalker/admin/webserver/dhcp-reserves_dnsmasq.conf",
+		"/C/Users/teddy/Dropbox/stalker/admin/ports.iptables.txt",
+		"/C/Users/teddy/AppData/Local/Temp/scp11445/srv/0mq_sender/tg.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp09679/srv/0mq_sender/tg_u.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp04534/usr/lib/zabbix/alertscripts/send_telegram.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp04063/usr/lib/zabbix/alertscripts/send_redmine.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp05402/srv/0mq_sender/0mq_sender.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp13678/srv/0mq_sender/redmine_send.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp04030/srv/0mq_sender/qc_0mq.py",
+		"/C/Users/teddy/Dropbox/stalker/admin/iptables_port_redir.txt",
+		"/C/Users/teddy/Desktop/login.xml",
+		"/C/Users/teddy/Desktop/logout.xml",
+		"/C/Users/teddy/Desktop/m.txt",
+		"/C/Users/teddy/Dropbox/stalker/admin/webserver/etc/network/interfaces",
+		"/C/Users/teddy/Dropbox/stalker/admin/convert_ports.py",
+		"/C/Users/teddy/Dropbox/stalker/admin/iptables.flush",
+		"/C/Users/teddy/Dropbox/stalker/admin/redmine_ololo.txt",
+		"/C/Users/teddy/Dropbox/stalker/admin/dns_settings_stalkerltd.ru",
+		"/C/Users/teddy/Desktop/asd.out",
+		"/C/Users/teddy/Desktop/asd",
+		"/C/Users/teddy/Dropbox/portable/sublime3-64/Data/Packages/GoSublime/CHANGELOG.md",
+		"/C/Users/teddy/AppData/Local/Temp/scp58673/usr/local/billing/phpclient/client2/client/components/paysystems/Paysystems_Pay.php",
+		"/C/Users/teddy/AppData/Local/Temp/scp48809/srv/0mq_sender/0mq_sender.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp48417/srv/0mq_sender/tg_u.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp59248/usr/local/billing/phpclient/client2/client/components/paysystems/Paysystems_Action.php",
+		"/C/Users/teddy/AppData/Local/Temp/scp52384/srv/0mq_sender/redmine_send.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp57657/srv/0mq_sender/telematika_bot_service.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp57717/srv/0mq_sender/contributors.txt",
+		"/C/Users/teddy/AppData/Local/Temp/scp59313/usr/local/billing/phpclient/client2/client/components/paysystems/Paysystems.php",
+		"/C/Users/teddy/AppData/Local/Temp/scp59950/usr/local/billing/phpclient/client2/client/components/paysystems/Paysystems_Form.php",
+		"/E/Downloads/860304250732_2017-02-11.csv",
+		"/F/Downloads/cpu_brg.backup",
+		"/C/Users/teddy/Desktop/1.38.txt",
+		"/C/Users/teddy/Dropbox/dev/authnpass/xkcd_pass.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp37584/srv/redmine/redmine-3.3.2/plugins/redmine_intouch/lib/tasks/intouch.rake",
+		"/C/Users/teddy/AppData/Local/Temp/scp40225/srv/redmine/redmine-3.3.2/plugins/redmine_intouch/lib/intouch/patches/issue_patch.rb",
+		"/C/Users/teddy/AppData/Local/Temp/scp40449/srv/redmine/redmine-3.3.2/plugins/redmine_intouch/lib/intouch/patches/project_patch.rb",
+		"/C/Users/teddy/AppData/Local/Temp/scp37338/srv/redmine/redmine-3.3.2/plugins/redmine_intouch/config/routes.rb",
+		"/C/Users/teddy/Dropbox/dev/authnpass/dictionary.xml",
+		"/C/Users/teddy/Dropbox/dev/authnpass/5kwlist",
+		"/C/Users/teddy/Dropbox/dev/authnpass/2klist.txt",
+		"/C/Users/teddy/Dropbox/dev/authnpass/DictionaryEnglish_nonum.txt",
+		"/C/Users/teddy/Dropbox/dev/authnpass/pass.py",
+		"/C/Users/teddy/Dropbox/dev/authnpass/rpass.py",
+		"/C/Users/teddy/Dropbox/dev/authnpass/simple_pass.py",
+		"/C/Users/teddy/Dropbox/dev/authnpass/cryptopass.py",
+		"/C/Users/teddy/Dropbox/portable/kitty(0.63)/keys/teddy-t430s.pub",
+		"/C/Users/teddy/Dropbox/portable/kitty(0.63)/keys/teddy-t430s",
+		"/C/Users/teddy/AppData/Local/Temp/scp22877/root/Rgloader_latest (3).zip",
+		"/C/Users/teddy/AppData/Local/Temp/scp32973/srv/redmine/redmine-3.3.2/log/production.log",
+		"/C/Users/teddy/Desktop/puma.stderr.log",
+		"/F/Downloads/11.1.2017.rsc",
+		"/F/Downloads/11.1.17.backup",
+		"/E/Downloads/api3.wsdl",
+		"/C/Users/teddy/wsp/main.go",
+		"/C/Users/teddy/Documents/make.conf",
+		"/C/Users/teddy/wsp/encoding.xml",
+		"/C/Users/teddy/AppData/Local/Temp/scp11447/srv/0mq_sender/0mq_sender.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp07026/usr/lib/zabbix/alertscripts/send_telegram.py",
+		"/C/Users/teddy/AppData/Local/Temp/scp48152/home/cuhjkkvt/suryaorganic/styles.css",
+		"/C/Users/teddy/AppData/Local/Temp/scp59256/home/cuhjkkvt/suryaorganic/index.html",
+		"/C/Users/teddy/AppData/Local/Temp/scp28452/home/cuhjkkvt/suryaorganic/payment.html",
+		"/C/Users/teddy/AppData/Local/Temp/scp00726/home/cuhjkkvt/suryaorganic/main.js",
+		"/D/X-Plane 10 Russia edition/X-Plane 10 Russian edition/Aircraft/NonDEF/320_JARDesign/aircraft.unlocked",
+		"/C/Users/teddy/Desktop/inet.txt",
+		"/C/Users/teddy/Desktop/cctv.txt",
+		"/F/X-Plane 10 Russia edition/X-Plane 10 Russian edition/Aircraft/Nondef/Boeing/777/FlightFactor Boeing 777 Extended v1.83/Boeing777v183Extended/Boeing777v183Extended/plugins/MH/64/win.xpl",
+		"/F/X-Plane 10 Russia edition/X-Plane 10 Russian edition/Aircraft/Nondef/Boeing/777/FlightFactor Boeing 777 Extended v1.83/Boeing777v183Extended/Boeing777v183Extended/plugins/sasl/data/scripts/init.sec",
+		"/C/Users/teddy/Desktop/xaLicenseGenerator/License Database.lua",
+		"/C/Users/teddy/Desktop/Saab 340A/Saab 340A/Airborne Variant/scripts/JGX.2.PLII.ADF.lua.aes",
+		"/C/Users/teddy/iface.go",
+		"/D/X-Plane 10 Russia edition/X-Plane 10 Russian edition/Aircraft/B737-800 Beta 26/B738.acf",
+		"/C/Users/teddy/AppData/Local/Temp/scp34221/srv/redmine/redmine-3.2.1/plugins/redmine_intouch/lib/intouch/patches/issue_patch.rb",
+		"/C/Users/teddy/AppData/Local/Temp/scp37527/srv/redmine/redmine-3.2.1/plugins/redmine_test/init.rb",
+		"/C/Users/teddy/AppData/Local/Temp/scp38766/srv/redmine/redmine-3.2.1/plugins/redmine_test/lib/redmine_test/listener.rb",
+		"/C/Users/teddy/AppData/Local/Temp/scp52282/srv/redmine/redmine-3.2.1/plugins/redmine_intouch/lib/intouch/patches/issue_patch.rb",
+		"/C/Users/teddy/AppData/Local/Temp/scp52986/srv/redmine/redmine-3.2.1/plugins/redmine_intouch/lib/intouch/hooks/users_form_hook.rb",
+		"/C/Users/teddy/AppData/Local/Temp/scp12603/srv/old__techoplat/%5Ctemp%5C02112015200202.txt",
+		"/C/Users/teddy/AppData/Local/Temp/scp11618/srv/old__techoplat/%5Ctemp%5C03122015200107.txt",
+		"/C/Users/teddy/AppData/Local/Temp/scp09932/srv/telematika-payreg/ftp/technoplat/%5Ctemp%5C01122015160123.txt",
+		"/C/Users/teddy/AppData/Local/Temp/scp10467/srv/telematika-payreg/ftp/technoplat/%5Ctemp%5C14112015160142.txt",
+		"/C/Users/teddy/Desktop/acc.py",
+		"/E/Downloads/Easy Redmine support_ Access (ticket ID #139492).eml",
+		"/F/Downloads/20151102.123.csv",
+		"/C/Users/teddy/Dropbox/telematika/payreg/asdsad/860304250732_40802810467160042012_2848.txt",
+		"/C/Users/teddy/Dropbox/telematika/payreg/asdsad/860304250732_40802810467160042012_2849.txt",
+		"/C/Users/teddy/Dropbox/telematika/payreg/asdsad/860304250732_40802810467160042012_2850.txt",
+		"/C/Users/teddy/Dropbox/telematika/payreg/asdsad/860304250732_40802810467160042012_2851.txt",
+		"/C/Users/teddy/Dropbox/telematika/payreg/asdsad/860304250732_40802810467160042012_2852.txt",
+		"/C/Users/teddy/Dropbox/telematika/payreg/asdsad/860304250732_40802810467160042012_2853.txt",
+		"/C/Users/teddy/Dropbox/telematika/payreg/asdsad/860304250732_40802810467160042012_2854.txt",
+		"/C/Users/teddy/Dropbox/telematika/payreg/asdsad/860304250732_40802810467160042012_2855.txt",
+		"/C/Users/teddy/Dropbox/telematika/payreg/asdsad/860304250732_40802810467160042012_2846.txt",
+		"/C/Users/teddy/Dropbox/telematika/payreg/asdsad/860304250732_40802810467160042012_2847.txt",
+		"/C/Users/teddy/Dropbox/telematika/payreg/parsers/gazp.py",
+		"/C/Users/teddy/Dropbox/telematika/payreg/khmb_rest_new.py",
+		"/C/Users/teddy/Dropbox/telematika/payreg/example.txt",
+		"/C/Users/teddy/Dropbox/telematika/payreg/gazp_rest.py",
+		"/C/Users/teddy/Dropbox/telematika/payreg/khmb_torn_new.py",
+		"/C/Users/teddy/Dropbox/telematika/payreg/gazp_desc.txt",
+		"/C/Users/teddy/Dropbox/telematika/payreg/app.py",
+		"/F/Downloads/id_rsa_no_pass.pub",
+		"/F/Downloads/api3.wsdl",
+		"/C/Users/teddy/Dropbox/telematika/LB/UTMtoLB/lbacc.py",
+		"/C/Users/teddy/Dropbox/telematika/payreg/lbpay.py",
+		"/C/Users/teddy/Dropbox/telematika/payreg/last_uid.data"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"*.py",
+			"-*.py",
+			"C:\\Users\\teddy\\Dropbox\\telematika\\payreg\\*.py",
+			"C:\\Users\\teddy\\Dropbox\\telematika\\payreg",
+			"C:\\Users\\teddy\\Dropbox\\stalker\\dev\\omega"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"(IF-MIB::linkDown|IF-MIB::linkUp)((.|[[:space:]])*?)(ifIndex\\.1 )",
+			"SNMPv2-SMI::enterprises.171.12.41.10.0.1((.|[[:space:]])*?)(SNMPv2-SMI::enterprises.171.12.41.3.1.1.1 type=2 value=INTEGER: 7)",
+			",",
+			"\\d+\\n",
+			"^\\d+\\S$",
+			"^\\d+$",
+			" ",
+			"eth2",
+			"178.216.64.69",
+			"\"",
+			"eth2",
+			"178.216.65.50",
+			"sh fix_link_trap.sh 192.168.9.5 \"11:50:00 2017/01/10\" up 25 >> /tmp/zabbix_traps.tmp",
+			"getAccount",
+			"getAgre",
+			"getAgr",
+			"getA",
+			"soapfilter",
+			"getAgreements",
+			"Agreement",
+			"SoapFilter",
+			"Api3PortType",
+			"form",
+			"(.+)",
+			"/span10",
+			"span10",
+			"session",
+			"9095",
+			"0000",
+			"gazp",
+			"check_auth",
+			"authenticate",
+			"sber",
+			":\n",
+			"parsed_invoice",
+			"dao_repr",
+			"exception()",
+			"exception",
+			"log\\.exception",
+			"log.exception",
+			"lstrip('000001')",
+			"log.",
+			"log",
+			">\n",
+			"UNDEF",
+			"khmb",
+			"(.+)",
+			"khmb_prep_error",
+			"check",
+			"\\t",
+			"\\t{4}",
+			"Latv",
+			" ",
+			"soapSbssTicket",
+			"SBSS",
+			"(.+)",
+			" ",
+			"\\t",
+			"(.+)",
+			"(jugra-.+)",
+			"\"",
+			"\\t",
+			"(.+)",
+			"jugra-",
+			"(.+)",
+			" +;",
+			" - ",
+			" \\;",
+			"Sbss",
+			"LBDBFilter",
+			"'sber':'buh_2@telematika.tv',",
+			"pay_table",
+			"payme",
+			"(.+)",
+			"(.+),(.+),(.+),(.+)\\n*",
+			"(.+)[,\\s\\n]",
+			"(.+)[,\\s\\n]*",
+			"(.+)[,\\n]*",
+			"([^,]+)\\n*",
+			"([^,]+)",
+			" ",
+			" 00:00:00",
+			" ",
+			"accountF",
+			"r.",
+			"r",
+			"blt",
+			"flt",
+			"blt",
+			"flt",
+			"entt",
+			"frt",
+			"Build",
+			"_asdict",
+			"asdict",
+			"())",
+			"t = sa.text(\n\tu\"\"\"\n\tselect \n\t  st.region,\n\t  st.city,\n\t  st.record_id st_id,\n\t  st.name st,\n\t  st.short st_short,\n\t  st.idx idx,\n\t  bl.record_id bl_id,\n\t  bl.name bl,\n\t  bl.block bl_blk,\n\t  IF( \n\t      bl.block = '', \n\t      bl.name, \n\t      concat(bl.name, '/', bl.block)\n\t  ) bl_full,\n\t  bl.short bl_short,\n\t  fl.record_id fl_id,\n\t  fl.short fl_sh,\n\t  fl.name fl\n\tfrom \n\t  address_street st\n\t  join address_building bl\n\t    on st.record_id = bl.street\n\t  join address_flat fl\n\t    on bl.record_id = fl.building\n\twhere \n\t  st.region = 1\n\t  and st.city = 2; \n\t\"\"\"\n\t)",
+			"\")\n",
+			")\n",
+			"utm",
+			"UTM",
+			"utm",
+			"Building",
+			"Build",
+			"Vgr",
+			"usergr",
+			"AccountA",
+			"u",
+			"AccountsAddon",
+			"AccountAddon",
+			"Addon",
+			"address",
+			"soapAddressBrief",
+			"soapAddressBried",
+			"Usergroup",
+			"(\\w+),",
+			"(\\w+) (.+)",
+			"(\\w+) (\\w+)",
+			"left",
+			"join",
+			"(.+)\\n",
+			"completeSource",
+			"targ",
+			"\\n",
+			"(.+)\\n",
+			"check_roles",
+			"cfg\\.([A-Z_]+)",
+			"cfg.IMAP_MAILBOX"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\\t",
+			"",
+			"eth3",
+			"178.216.64.70",
+			"178.216.64.69",
+			"'",
+			"eth1",
+			"178.216.65.51",
+			"\\1,",
+			"/span8",
+			"span8",
+			"0000",
+			"some_bank",
+			"\\1 +",
+			"khmb_error",
+			"    ",
+			"",
+			"'\\1',",
+			"",
+			",",
+			"'\\1',",
+			"'",
+			",",
+			"'\\1',",
+			"",
+			"'\\1',",
+			";",
+			"\\1,",
+			"'\\1',",
+			"'\\1'",
+			"\"\\1\",\"\\2\",\"\\3\",\"\\4\"\\n",
+			"\"\\1\"",
+			",",
+			"",
+			",",
+			"entranceq",
+			"floorq",
+			"'\\1',",
+			"\\1",
+			"",
+			"\"\\1\",",
+			"\\1,",
+			"",
+			"\\1,",
+			"check_role",
+			"cfg.get('', '\\1')",
+			"\\n",
+			"\"",
+			"",
+			"=",
+			"&",
+			"",
+			"\\1",
+			"<a href=\"http://z0r.de/\\1\">\\1</a><br/>",
+			"",
+			"<a href=\"http://z0r.de/\\1\">\\1</a><br/>",
+			"<a href=\"http://z0r.de/\\1\">\\1</a>",
+			"http://z0r.de/\\1",
+			"",
+			"\\1,",
+			"",
+			"\"\\1\",",
+			"\"1\",",
+			",\\n",
+			"",
+			",\\n",
+			"\\n,",
+			"",
+			"\\t",
+			"\\n",
+			"",
+			"db.sa.",
+			"db.sah.",
+			"db.sa.",
+			"db.Base",
+			"db.sa.orm.relationship",
+			"db.sa.",
+			"@db.sah.",
+			"@db.sah",
+			"db.Base",
+			"\\1\\n",
+			"\\1,",
+			"u'\\1',",
+			"\\1 float,",
+			"float",
+			"\\1 int,",
+			"\\1,",
+			"'\\1'",
+			".",
+			"",
+			".",
+			"",
+			"r['\\1']",
+			"@sah.hybrid",
+			"db.",
+			"db",
+			"db.Model",
+			"",
+			"http://z0r.de/\\1",
+			"\\1,",
+			"\"\\1\"",
+			"cmd",
+			"",
+			"255",
+			"",
+			"255",
+			"",
+			"\"\\1\"",
+			"",
+			"25",
+			"255",
+			"",
+			"`",
+			"",
+			",\\n",
+			"\\1",
+			"\"",
+			",\\n",
+			"",
+			"\n",
+			"\\1",
+			"",
+			"\\1,",
+			"192.168.1.117",
+			"\\1,",
+			"",
+			"\"\\1\",",
+			"\\1,"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "monitort-checker.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1034,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								745,
+								745
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "monitort-rest.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5772,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								150,
+								150
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-main-output":
+	{
+		"height": 118.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 118.0
+	},
+	"output.autopep8":
+	{
+		"height": 136.0
+	},
+	"output.coffeecompile_output":
+	{
+		"height": 148.0
+	},
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 203.0
+	},
+	"output.git-commit":
+	{
+		"height": 136.0
+	},
+	"output.git-push":
+	{
+		"height": 136.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "monitort.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ome",
+				"omega.py"
+			],
+			[
+				"e",
+				"excel.py"
+			],
+			[
+				"mo",
+				"model.py"
+			],
+			[
+				"ex",
+				"excel.py"
+			],
+			[
+				"ass",
+				"dpr/assay.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 240.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

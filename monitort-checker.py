@@ -1,49 +1,63 @@
-import asyncio
+import sys
+import logging
 import urllib.parse
+import asyncio
 import bson
 from bson.objectid import ObjectId
 from motor.motor_asyncio import AsyncIOMotorClient
 
 
+log = logging.getLogger(__name__)
+
+
 @asyncio.coroutine
-def check_tcp_port(db, url, port):
-        # TODO: ConnectionError handle and timeout
-        # TODO: Forking
-        cursor = db.items.find({})
-        items = []
-        while (yield from cursor.fetch_next):
-            try:
-                item = cursor.next_object()
-                if item.get('address'):
-                    url = urllib.parse.urlsplit(item['address'])
-                    connect = asyncio.open_connection(
-                        url.hostname, port=item['port'])
-                    reader, writer = yield from connect
-                    query = ('HEAD {path} HTTP/1.0\r\n'
-                             'Host: {hostname}\r\n'
-                             '\r\n').format(
-                             path=url.path or '/', hostname=url.hostname)
-                    writer.write(query.encode('latin-1'))
-                    while True:
-                        line = yield from reader.readline()
-                        if not line:
-                            break
-                        line = line.decode('latin1').rstrip()
-                        if line:
-                            print('HTTP header> %s' % line)
-                    writer.close()
-                    print("Alive")
-            except ConnectionRefusedError:
-                print ("!")
+def make_connection(db):
+    # TODO: Forking
+    # log.info("???")
+    clients = {}
+    loop = asyncio.get_event_loop()
+    cursor = db.items.find({})
+    while (yield from cursor.fetch_next):
+        item = cursor.next_object()
+        host, port = item['address'], item['port']
+        # task = asyncio.Task(check_tcp_port(host, port))
+        task = asyncio.ensure_future(check_tcp_port(host, port))
+
+        clients[task] = (host, port)
+
+        def client_done(task):
+            del clients[task]
+            log.info("Client Task Finished")
+            if len(clients) == 0:
+                log.info("clients is empty, stopping loop.")
+                loop = asyncio.get_event_loop()
+                loop.stop()
+
+        log.info("New Client Task")
+        task.add_done_callback(client_done)
 
 
-def main(args=None):
-    import sys
+@asyncio.coroutine
+def check_tcp_port(host, port):
+    try:
+        # Wait for 3 seconds, then raise TimeoutError
+        conn = asyncio.open_connection(host, port)
+        reader, writer = yield from asyncio.wait_for(
+            conn, timeout=3)
+        log.info(
+            "Connection is alive {} {}".format(host, port))
+        writer.close()
+    except asyncio.TimeoutError:
+        log.info("Timeout, skipping {} {}".format(host, port))
+    except ConnectionRefusedError:
+        log.info(
+            "Connection refused, skipping {} {}"
+            .format(host, port)
+        )
+
+
+def run():
     import argparse
-
-    if args is None:
-        args = sys.argv[1:]
-
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
@@ -60,14 +74,23 @@ def main(args=None):
     )
 
     args = parser.parse_args()
+
     db = AsyncIOMotorClient(args.db).items
 
-    url = "http://127.0.0.1"
-    port = "8080"
     loop = asyncio.get_event_loop()
-    task = asyncio.ensure_future(check_tcp_port(db, url, port))
-    loop.run_until_complete(task)
-    loop.close()
+    main = asyncio.ensure_future(make_connection(db))
+    loop.run_forever()
+
+    log.info("End")
+    # loop = asyncio.get_event_loop()
+    # task = asyncio.ensure_future(check_tcp_port(db))
+    # loop.run_until_complete(task)
+    # loop.close()
 
 if __name__ == "__main__":
-    main()
+    log = logging.getLogger("")
+    ch = logging.StreamHandler(sys.stdout)
+    log.addHandler(ch)
+    log.setLevel(logging.DEBUG)
+    log.info("Ololo?..")
+    run()
