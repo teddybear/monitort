@@ -11,19 +11,14 @@ log = logging.getLogger(__name__)
 
 
 @asyncio.coroutine
-def make_connection(db):
-    # TODO: Forking
-    # log.info("???")
+def make_connection(db, forks=4):
     clients = {}
     loop = asyncio.get_event_loop()
     cursor = db.items.find({})
-    while (yield from cursor.fetch_next):
-        item = cursor.next_object()
-        host, port = item['address'], item['port']
-        # task = asyncio.Task(check_tcp_port(host, port))
-        task = asyncio.ensure_future(check_tcp_port(host, port))
+    for frk in range(forks):
+        task = asyncio.ensure_future(check_tcp_port(cursor))
 
-        clients[task] = (host, port)
+        clients[task] = frk
 
         def client_done(task):
             del clients[task]
@@ -38,22 +33,27 @@ def make_connection(db):
 
 
 @asyncio.coroutine
-def check_tcp_port(host, port):
-    try:
-        # Wait for 3 seconds, then raise TimeoutError
-        conn = asyncio.open_connection(host, port)
-        reader, writer = yield from asyncio.wait_for(
-            conn, timeout=3)
-        log.info(
-            "Connection is alive {} {}".format(host, port))
-        writer.close()
-    except asyncio.TimeoutError:
-        log.info("Timeout, skipping {} {}".format(host, port))
-    except ConnectionRefusedError:
-        log.info(
-            "Connection refused, skipping {} {}"
-            .format(host, port)
-        )
+def check_tcp_port(cursor):
+    while (yield from cursor.fetch_next):
+        item = cursor.next_object()
+        host, port = item['address'], item['port']
+        try:
+            # Wait for 3 seconds, then raise TimeoutError
+            conn = asyncio.open_connection(host, port)
+            reader, writer = yield from asyncio.wait_for(
+                conn, timeout=3)
+            log.info(
+                "Connection is alive {} {}".format(host, port))
+            writer.close()
+        except asyncio.TimeoutError:
+            log.info("Timeout, skipping {} {}".format(host, port))
+            continue
+        except ConnectionRefusedError:
+            log.info(
+                "Connection refused, skipping {} {}"
+                .format(host, port)
+            )
+            continue
 
 
 def run():
@@ -78,14 +78,9 @@ def run():
     db = AsyncIOMotorClient(args.db).items
 
     loop = asyncio.get_event_loop()
-    main = asyncio.ensure_future(make_connection(db))
+    main = asyncio.ensure_future(make_connection(db, args.forks))
     loop.run_forever()
 
-    log.info("End")
-    # loop = asyncio.get_event_loop()
-    # task = asyncio.ensure_future(check_tcp_port(db))
-    # loop.run_until_complete(task)
-    # loop.close()
 
 if __name__ == "__main__":
     log = logging.getLogger("")
