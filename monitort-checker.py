@@ -87,5 +87,4 @@ if __name__ == "__main__":
     ch = logging.StreamHandler(sys.stdout)
     log.addHandler(ch)
     log.setLevel(logging.DEBUG)
-    log.info("Ololo?..")
     run()
