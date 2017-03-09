@@ -89,8 +89,10 @@ def check_tcp_port(db):
             q.task_done()
 
 
-def main():
+def main(args=None):
     import argparse
+    if args is None:
+        args = sys.argv[1:]
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
@@ -106,7 +108,7 @@ def main():
         default=4
     )
 
-    args = parser.parse_args()
+    args = parser.parse_args(args)
 
     db = AsyncIOMotorClient(args.db).items
 

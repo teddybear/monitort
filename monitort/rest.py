@@ -198,7 +198,7 @@ def main(args=None):
         default="mongodb://127.0.0.1/monitort"
     )
 
-    args = parser.parse_args()
+    args = parser.parse_args(args)
     db = AsyncIOMotorClient(args.db).items
     app['db'] = db
     web.run_app(app, host=args.address, port=args.port)
