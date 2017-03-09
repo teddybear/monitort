@@ -5,37 +5,32 @@ import asyncio
 import bson
 from bson.objectid import ObjectId
 from motor.motor_asyncio import AsyncIOMotorClient
-
+import time
 
 log = logging.getLogger(__name__)
 
+q = asyncio.Queue()
+
 
 @asyncio.coroutine
-def make_connection(db, forks=4):
-    clients = {}
-    loop = asyncio.get_event_loop()
+def produce_items(db):
     cursor = db.items.find({})
-    for frk in range(forks):
-        task = asyncio.ensure_future(check_tcp_port(cursor))
-
-        clients[task] = frk
-
-        def client_done(task):
-            del clients[task]
-            log.info("Client Task Finished")
-            if len(clients) == 0:
-                log.info("clients is empty, stopping loop.")
-                loop = asyncio.get_event_loop()
-                loop.stop()
-
-        log.info("New Client Task")
-        task.add_done_callback(client_done)
-
-
-@asyncio.coroutine
-def check_tcp_port(cursor):
     while (yield from cursor.fetch_next):
         item = cursor.next_object()
+        if item:
+            yield from q.put(item)
+    yield from q.join()
+    for task in asyncio.Task.all_tasks():
+        task.cancel()
+    loop = asyncio.get_event_loop()
+    loop.stop()
+    log.info("Exit")
+
+
+@asyncio.coroutine
+def check_tcp_port(db):
+    while True:
+        item = yield from q.get()
         host, port = item['address'], item['port']
         try:
             # Wait for 3 seconds, then raise TimeoutError
@@ -45,18 +40,56 @@ def check_tcp_port(cursor):
             log.info(
                 "Connection is alive {} {}".format(host, port))
             writer.close()
+            if not item.get("alive", False):
+                db.items.update_one(
+                    {"_id": item["_id"]},
+                    {
+                        "$set": {
+                            "alive": True,
+                            "since": int(time.time())
+                        }
+                    }
+                )
+            elif not item.get("since", None):
+                db.items.update_one(
+                    {"_id": item["_id"]},
+                    {
+                        "$set": {
+                            "since": int(time.time())
+                        }
+                    }
+                )
+
         except asyncio.TimeoutError:
             log.info("Timeout, skipping {} {}".format(host, port))
-            continue
+            db.items.update_one(
+                {"_id": item["_id"]},
+                {
+                    "$set": {
+                        "alive": False,
+                        "since": int(time.time())
+                    }
+                }
+            )
         except ConnectionRefusedError:
             log.info(
                 "Connection refused, skipping {} {}"
                 .format(host, port)
             )
-            continue
+            db.items.update_one(
+                {"_id": item["_id"]},
+                {
+                    "$set": {
+                        "alive": False,
+                        "since": int(time.time())
+                    }
+                }
+            )
+        finally:
+            q.task_done()
 
 
-def run():
+def main():
     import argparse
     parser = argparse.ArgumentParser()
 
@@ -78,8 +111,9 @@ def run():
     db = AsyncIOMotorClient(args.db).items
 
     loop = asyncio.get_event_loop()
-    main = asyncio.ensure_future(make_connection(db, args.forks))
-    loop.run_forever()
+    for frk in range(args.forks):
+        asyncio.ensure_future(check_tcp_port(db))
+    loop.run_until_complete(produce_items(db))
 
 
 if __name__ == "__main__":
@@ -87,4 +121,5 @@ if __name__ == "__main__":
     ch = logging.StreamHandler(sys.stdout)
     log.addHandler(ch)
     log.setLevel(logging.DEBUG)
-    run()
+    log.info("Start")
+    main()
