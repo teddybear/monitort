@@ -108,6 +108,12 @@ def main(args=None):
         default=4
     )
 
+    log = logging.getLogger("")
+    ch = logging.StreamHandler(sys.stdout)
+    log.addHandler(ch)
+    log.setLevel(logging.DEBUG)
+    log.info("Start")
+
     args = parser.parse_args(args)
 
     db = AsyncIOMotorClient(args.db).items
@@ -119,9 +125,4 @@ def main(args=None):
 
 
 if __name__ == "__main__":
-    log = logging.getLogger("")
-    ch = logging.StreamHandler(sys.stdout)
-    log.addHandler(ch)
-    log.setLevel(logging.DEBUG)
-    log.info("Start")
     main()
