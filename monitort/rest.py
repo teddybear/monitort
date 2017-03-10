@@ -6,11 +6,6 @@ from bson.objectid import ObjectId
 from motor.motor_asyncio import AsyncIOMotorClient
 
 
-# def get_db():
-#     db = AsyncIOMotorClient().items
-#     return db
-
-
 def validate_item_create(doc):
     return (
         "name" in doc and
