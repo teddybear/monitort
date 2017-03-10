@@ -42,7 +42,6 @@ def endpoints(request):
             doc = yield from request.json()
             if validate_item_create(doc):
                 items = yield from db.items.insert_one(doc)
-                print(items, dir(items))
                 doc.update({"id": str(doc.pop("_id"))})
                 return web.Response(text=json.dumps(doc))
             return web.Response(

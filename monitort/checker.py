@@ -1,9 +1,6 @@
 import sys
 import logging
-import urllib.parse
 import asyncio
-import bson
-from bson.objectid import ObjectId
 from motor.motor_asyncio import AsyncIOMotorClient
 import time
 
@@ -22,9 +19,40 @@ def produce_items(db):
     yield from q.join()
     for task in asyncio.Task.all_tasks():
         task.cancel()
-    loop = asyncio.get_event_loop()
-    loop.stop()
-    log.info("Exit")
+    log.debug("Exit")
+
+
+def update_item(db, item, alive=True):
+    if alive:
+        if not item.get("alive", False):
+            db.items.update_one(
+                {"_id": item["_id"]},
+                {
+                    "$set": {
+                        "alive": True,
+                        "since": int(time.time())
+                    }
+                }
+            )
+        elif not item.get("since", None):
+            db.items.update_one(
+                {"_id": item["_id"]},
+                {
+                    "$set": {
+                        "since": int(time.time())
+                    }
+                }
+            )
+    else:
+        db.items.update_one(
+            {"_id": item["_id"]},
+            {
+                "$set": {
+                    "alive": False,
+                    "since": int(time.time())
+                }
+            }
+        )
 
 
 @asyncio.coroutine
@@ -39,52 +67,16 @@ def check_tcp_port(db):
                 conn, timeout=3)
             log.info(
                 "Connection is alive {} {}".format(host, port))
-            writer.close()
-            if not item.get("alive", False):
-                db.items.update_one(
-                    {"_id": item["_id"]},
-                    {
-                        "$set": {
-                            "alive": True,
-                            "since": int(time.time())
-                        }
-                    }
-                )
-            elif not item.get("since", None):
-                db.items.update_one(
-                    {"_id": item["_id"]},
-                    {
-                        "$set": {
-                            "since": int(time.time())
-                        }
-                    }
-                )
-
+            update_item(db, item, True)
         except asyncio.TimeoutError:
             log.info("Timeout, skipping {} {}".format(host, port))
-            db.items.update_one(
-                {"_id": item["_id"]},
-                {
-                    "$set": {
-                        "alive": False,
-                        "since": int(time.time())
-                    }
-                }
-            )
+            update_item(db, item, False)
         except ConnectionRefusedError:
             log.info(
                 "Connection refused, skipping {} {}"
                 .format(host, port)
             )
-            db.items.update_one(
-                {"_id": item["_id"]},
-                {
-                    "$set": {
-                        "alive": False,
-                        "since": int(time.time())
-                    }
-                }
-            )
+            update_item(db, item, False)
         finally:
             q.task_done()
 
@@ -112,7 +104,7 @@ def main(args=None):
     ch = logging.StreamHandler(sys.stdout)
     log.addHandler(ch)
     log.setLevel(logging.DEBUG)
-    log.info("Start")
+    log.debug("Start")
 
     args = parser.parse_args(args)
 
