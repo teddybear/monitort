@@ -1,21 +1,18 @@
 import pytest
 
 import asyncio
-import checker
-from motor.motor_asyncio import AsyncIOMotorClient
-
-
-@pytest.fixture
-def db():
-    return AsyncIOMotorClient().items
+from monitort import checker
 
 
 @pytest.mark.asyncio
-def test_producer(db):
-    """ TODO: Write working test... T_T"""
-    q = checker.q
-    asyncio.ensure_future(checker.produce_items(db))
-    item = yield from q.get()
-    print(type(item))
-    assert type(item) is None
-    q.task_done()
+@asyncio.coroutine
+def test_producer(db, q, event_loop):
+    """ TODO: Fill data before consume"""
+    yield from checker.produce_items(db, q)
+
+    while not q.empty():
+        item = yield from q.get()
+        assert item is not None
+    assert q.empty() is True
+    for task in asyncio.Task.all_tasks():
+        task.cancel()
