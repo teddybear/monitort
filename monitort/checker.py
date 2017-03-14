@@ -9,7 +9,7 @@ log = logging.getLogger(__name__)
 
 @asyncio.coroutine
 def produce_items(db, q):
-    cursor = db.test_items.find({})
+    cursor = db.items.find({})
     while (yield from cursor.fetch_next):
         item = cursor.next_object()
         if item:
