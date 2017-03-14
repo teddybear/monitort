@@ -16,10 +16,11 @@ def produce_items(db, q):
             yield from q.put(item)
 
 
+@asyncio.coroutine
 def update_item(db, item, alive=True):
     if alive:
-        if not item.get("alive", False):
-            db.items.update_one(
+        if item.get("alive", False) is False:
+            yield from db.items.update_one(
                 {"_id": item["_id"]},
                 {
                     "$set": {
@@ -28,8 +29,8 @@ def update_item(db, item, alive=True):
                     }
                 }
             )
-        elif not item.get("since", None):
-            db.items.update_one(
+        elif item.get("since", None) is None:
+            yield from db.items.update_one(
                 {"_id": item["_id"]},
                 {
                     "$set": {
@@ -38,7 +39,7 @@ def update_item(db, item, alive=True):
                 }
             )
     else:
-        db.items.update_one(
+        yield from db.items.update_one(
             {"_id": item["_id"]},
             {
                 "$set": {
@@ -61,16 +62,16 @@ def check_tcp_port(db, q):
                 conn, timeout=3)
             log.info(
                 "Connection is alive {} {}".format(host, port))
-            update_item(db, item, True)
+            yield from update_item(db, item, True)
         except asyncio.TimeoutError:
             log.info("Timeout, skipping {} {}".format(host, port))
-            update_item(db, item, False)
+            yield from update_item(db, item, False)
         except ConnectionRefusedError:
             log.info(
                 "Connection refused, skipping {} {}"
                 .format(host, port)
             )
-            update_item(db, item, False)
+            yield from update_item(db, item, False)
         finally:
             q.task_done()
 

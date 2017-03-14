@@ -30,6 +30,6 @@ def make_unavail_item():
         'address': '127.0.0.1',
         'port': '21',
         'name': 'Unavail Item',
-        'alive': True,
+        'alive': False,
         'since': 12343567
     }
