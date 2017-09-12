@@ -7,7 +7,7 @@ from conftest import make_alive_item, make_unavail_item
 
 @pytest.mark.asyncio
 @asyncio.coroutine
-def test_producer(db, q, event_loop):
+def test_producer(db, q):
     yield from db.items.remove()
     for i in range(10):
         yield from db.items.insert_one(make_alive_item())
